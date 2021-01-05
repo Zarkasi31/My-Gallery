@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --font-general : 'Montserrat', sans-serif;
+    --tebal:600;
+}
+*{
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+body{
+
+    font-family: var(--font-general);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* style profile */
+
+header{
+    margin-bottom: 40px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.profile p{
+    margin-top: 10px;
+}
+
+.profile .name{
+    font-weight: var(--tebal);
+    font-size:24px;
+    color: rgba(78, 81, 80, 1);
+
+}
+
+.profile .address{
+    font-weight: var(--tebal);
+    font-size: 14px;
+    color: rgba(169, 169, 169, 1);
+
+}
+
+.profile .photo-profile{
+    max-width:160px;
+    border-radius: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+
+    background: rgba(229, 229, 229, 1);
+    border-radius: 10px;
+    width: 110px;
+    text-align: center;
+
+    padding: 12px;
+    margin: 30px 0px 0px 30px;
+}
+
+.card:first-child{
+    margin-left: 0;
+}
+
+.card .title{
+    color: rgba(78, 81, 80, 1);
+    font-size: 18px;
+    font-weight: var(--tebal);
+}
+
+.card .number{
+    color: rgba(189, 189, 189, 1);
+    font-size: 14px;
+    font-weight: var(--tebal);
+}
+
+
+/* style content */
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    margin-bottom: 50px;
+    
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    border-radius: 20px;
+    text-align: center;
+}
+
+.photo-1{
+    
+}
+
+.photo-1 img{
+    max-width: 350px;
+}
+
+.photo-2{
+    grid-column: 2/span 3;
+    margin: 0 auto;
+}
+
+.photo-2 img{
+    max-height: 350px;
+}
+
+.photo-3{
+    /* grid-row: 2; */
+    grid-column: 1/span 2;
+}
+
+.photo-3 img{
+    max-height: 350px;
+}
+
+.photo-4{
+    grid-column: 3;
+    grid-row: 2/span 3;
+    margin: 0 auto;
+}
+
+.photo-4 img{
+    max-width: 350px;
+    border-radius: 50px;
+}
+
+.photo-5{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.photo-5 img{
+    max-width: 350px;
+}
+
+.photo-6{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.photo-6 img{
+    max-width: 350px;
+}
+
+footer{
+    color: rgba(169, 169, 169, 1);
+    font-size: 14px;
+    font-weight: var(--tebal);
+    text-align: center;
+}
+
+@media (max-width:720px){
+    .wd{
+        width: 150px;
+    }
+
+    .hg{
+        height: 150px;
+    }
+}
+
+
